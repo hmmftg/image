@@ -12,7 +12,7 @@ import (
 	"math"
 	"sync"
 
-	"golang.org/x/image/math/f64"
+	"github.com/hmmftg/image/math/f64"
 )
 
 // Copy copies the part of the source image defined by src and sr and writes

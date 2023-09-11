@@ -10,7 +10,7 @@ made by companies such as Adobe and Microsoft. These fonts are generally
 available, but copies are not explicitly included in this repository due to
 licensing differences or file size concerns. To opt-in, run:
 
-go test golang.org/x/image/font/sfnt -args -proprietary
+go test github.com/hmmftg/image/font/sfnt -args -proprietary
 
 Not all tests pass out-of-the-box on all systems. For example, the Microsoft
 Times New Roman font is downloadable gratis even on non-Windows systems, but as
@@ -19,7 +19,7 @@ End User License Agreement (EULA) and a CAB format decoder. These tests assume
 that such fonts have already been installed. You may need to specify the
 directories for these fonts:
 
-go test golang.org/x/image/font/sfnt -args -proprietary \
+go test github.com/hmmftg/image/font/sfnt -args -proprietary \
 	-adobeDir=$HOME/fonts/adobe \
 	-appleDir=$HOME/fonts/apple \
 	-dejavuDir=$HOME/fonts/dejavu \
@@ -28,7 +28,7 @@ go test golang.org/x/image/font/sfnt -args -proprietary \
 
 To only run those tests for the Microsoft fonts:
 
-go test golang.org/x/image/font/sfnt -test.run=ProprietaryMicrosoft -args -proprietary etc
+go test github.com/hmmftg/image/font/sfnt -test.run=ProprietaryMicrosoft -args -proprietary etc
 */
 
 // TODO: enable Apple/Microsoft tests by default on Darwin/Windows?
@@ -42,8 +42,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/image/font"
-	"golang.org/x/image/math/fixed"
+	"github.com/hmmftg/image/font"
+	"github.com/hmmftg/image/math/fixed"
 )
 
 var (

@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Package f32 implements float32 vector and matrix types.
-package f32 // import "golang.org/x/image/math/f32"
+package f32 // import "github.com/hmmftg/image/math/f32"
 
 // Vec2 is a 2-element vector.
 type Vec2 [2]float32

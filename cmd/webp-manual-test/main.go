@@ -5,12 +5,12 @@
 //go:build ignore
 // +build ignore
 
-// This build tag means that "go install golang.org/x/image/..." doesn't
+// This build tag means that "go install github.com/hmmftg/image/..." doesn't
 // install this manual test. Use "go run main.go" to explicitly run it.
 
 // Program webp-manual-test checks that the Go WEBP library's decodings match
 // the C WEBP library's.
-package main // import "golang.org/x/image/cmd/webp-manual-test"
+package main // import "github.com/hmmftg/image/cmd/webp-manual-test"
 
 import (
 	"bytes"
@@ -26,7 +26,7 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/image/webp"
+	"github.com/hmmftg/image/webp"
 )
 
 var (

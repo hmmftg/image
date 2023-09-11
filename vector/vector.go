@@ -8,7 +8,7 @@
 // asmfmt is https://github.com/klauspost/asmfmt
 
 // Package vector provides a rasterizer for 2-D vector graphics.
-package vector // import "golang.org/x/image/vector"
+package vector // import "github.com/hmmftg/image/vector"
 
 // The rasterizer's design follows
 // https://medium.com/@raphlinus/inside-the-fastest-font-renderer-in-the-world-75ae5270c445

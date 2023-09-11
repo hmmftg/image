@@ -5,7 +5,7 @@
 package sfnt
 
 import (
-	"golang.org/x/image/math/fixed"
+	"github.com/hmmftg/image/math/fixed"
 )
 
 // Flags for simple (non-compound) glyphs.

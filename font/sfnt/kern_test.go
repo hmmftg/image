@@ -19,7 +19,7 @@ these fonts stops after -bulkMaxKernPairs.
 
 To opt-in:
 
-go test golang.org/x/image/font/sfnt -test.run=BulkKern -args -bulk -bulkFontDirs /Library/Fonts:./myfonts
+go test github.com/hmmftg/image/font/sfnt -test.run=BulkKern -args -bulk -bulkFontDirs /Library/Fonts:./myfonts
 */
 
 import (
@@ -31,8 +31,8 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/image/font"
-	"golang.org/x/image/math/fixed"
+	"github.com/hmmftg/image/font"
+	"github.com/hmmftg/image/math/fixed"
 )
 
 var (

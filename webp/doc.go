@@ -6,4 +6,4 @@
 //
 // WEBP is defined at:
 // https://developers.google.com/speed/webp/docs/riff_container
-package webp // import "golang.org/x/image/webp"
+package webp // import "github.com/hmmftg/image/webp"

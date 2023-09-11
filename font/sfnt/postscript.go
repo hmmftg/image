@@ -52,7 +52,7 @@ import (
 	"math"
 	"strconv"
 
-	"golang.org/x/image/math/fixed"
+	"github.com/hmmftg/image/math/fixed"
 )
 
 const (

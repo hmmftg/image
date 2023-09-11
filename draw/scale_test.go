@@ -16,7 +16,7 @@ import (
 	"reflect"
 	"testing"
 
-	"golang.org/x/image/math/f64"
+	"github.com/hmmftg/image/math/f64"
 
 	_ "image/jpeg"
 )
@@ -213,8 +213,8 @@ func BenchmarkSimpleTransformScale(b *testing.B) {
 func TestOps(t *testing.T) {
 	blue := image.NewUniform(color.RGBA{0x00, 0x00, 0xff, 0xff})
 	testCases := map[Op]color.RGBA{
-		Over: color.RGBA{0x7f, 0x00, 0x80, 0xff},
-		Src:  color.RGBA{0x7f, 0x00, 0x00, 0x7f},
+		Over: {0x7f, 0x00, 0x80, 0xff},
+		Src:  {0x7f, 0x00, 0x00, 0x7f},
 	}
 	for op, want := range testCases {
 		dst := image.NewRGBA(image.Rect(0, 0, 2, 2))

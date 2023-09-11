@@ -11,7 +11,7 @@ import (
 	"log"
 	"strings"
 
-	"golang.org/x/image/riff"
+	"github.com/hmmftg/image/riff"
 )
 
 func ExampleReader() {

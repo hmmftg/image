@@ -1,13 +1,13 @@
 # Go Images
 
-[![Go Reference](https://pkg.go.dev/badge/golang.org/x/image.svg)](https://pkg.go.dev/golang.org/x/image)
+[![Go Reference](https://pkg.go.dev/badge/github.com/hmmftg/image.svg)](https://pkg.go.dev/github.com/hmmftg/image)
 
 This repository holds supplementary Go image libraries.
 
 ## Download/Install
 
-The easiest way to install is to run `go get -u golang.org/x/image/...`. You can
-also manually git clone the repository to `$GOPATH/src/golang.org/x/image`.
+The easiest way to install is to run `go get -u github.com/hmmftg/image/...`. You can
+also manually git clone the repository to `$GOPATH/src/github.com/hmmftg/image`.
 
 ## Report Issues / Send Patches
 

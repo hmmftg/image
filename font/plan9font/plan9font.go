@@ -5,7 +5,7 @@
 // Package plan9font implements font faces for the Plan 9 font and subfont file
 // formats. These formats are described at
 // https://9p.io/magic/man2html/6/font
-package plan9font // import "golang.org/x/image/font/plan9font"
+package plan9font // import "github.com/hmmftg/image/font/plan9font"
 
 import (
 	"bytes"
@@ -17,8 +17,8 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/image/font"
-	"golang.org/x/image/math/fixed"
+	"github.com/hmmftg/image/font"
+	"github.com/hmmftg/image/math/fixed"
 )
 
 // fontchar describes one character glyph in a subfont.

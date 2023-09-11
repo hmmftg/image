@@ -10,7 +10,7 @@
 // This package provides a low-level API and does not depend on vector
 // rasterization packages. Glyphs are represented as vectors, not pixels.
 //
-// The sibling golang.org/x/image/font/opentype package provides a high-level
+// The sibling github.com/hmmftg/image/font/opentype package provides a high-level
 // API, including glyph rasterization.
 //
 // This package provides a decoder in that it produces a TTF's glyphs (and
@@ -28,7 +28,7 @@
 // another io.Writer, copying the underlying TTF file, but this package does
 // not provide an encoder. Specifically, there is no API to build a different
 // TTF file, whether 'from scratch' or by modifying an existing one.
-package sfnt // import "golang.org/x/image/font/sfnt"
+package sfnt // import "github.com/hmmftg/image/font/sfnt"
 
 // This implementation was written primarily to the
 // https://www.microsoft.com/en-us/Typography/OpenTypeSpecification.aspx
@@ -46,8 +46,8 @@ import (
 	"image"
 	"io"
 
-	"golang.org/x/image/font"
-	"golang.org/x/image/math/fixed"
+	"github.com/hmmftg/image/font"
+	"github.com/hmmftg/image/math/fixed"
 	"golang.org/x/text/encoding/charmap"
 )
 
@@ -795,14 +795,8 @@ func (f *Font) initializeTables(offset int, isDfont bool) (buf1 []byte, finalTab
 	if err != nil {
 		return nil, 0, false, err
 	}
-	for b, first, prevTag := buf, true, uint32(0); len(b) > 0; b = b[16:] {
+	for b := buf; len(b) > 0; b = b[16:] {
 		tag := u32(b)
-		if first {
-			first = false
-		} else if tag <= prevTag {
-			return nil, 0, false, errInvalidTableTagOrder
-		}
-		prevTag = tag
 
 		o, n := u32(b[8:12]), u32(b[12:16])
 		// For dfont files, the offset is relative to the resource, not the

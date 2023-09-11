@@ -5,7 +5,7 @@ package inconsolata
 import (
 	"image"
 
-	"golang.org/x/image/font/basicfont"
+	"github.com/hmmftg/image/font/basicfont"
 )
 
 // bold8x16 contains 289 10×17 glyphs in 49130 Pix bytes.
